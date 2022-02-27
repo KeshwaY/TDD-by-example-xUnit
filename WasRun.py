@@ -14,3 +14,6 @@ class WasRun(TestCase):
 
     def testMethod(self):
         self.log = f'{self.log} testMethod'
+
+    def testBrokenMethod(self):
+        raise Exception
