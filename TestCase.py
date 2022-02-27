@@ -5,7 +5,11 @@ class TestCase:
     def setUp(self):
         ...
 
+    def tearDown(self):
+        ...
+
     def run(self):
         self.setUp()
         method = getattr(self, self.name)
         method()
+        self.tearDown()
